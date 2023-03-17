@@ -7,7 +7,6 @@ public class Disk {
 
 //    System.out.println("Kapacita disku je: " + kapacitaDisku)
 
-
     public long getVyuziteMisto() {
         return vyuziteMisto;
     }
@@ -24,6 +23,13 @@ public class Disk {
         this.kapacitaDisku = kapacitaDisku;
     }
 
+    @Override
+    public String toString() {
+        return "Disk {" +
+                " kapacita disku: " + kapacitaDisku + " B " +
+                ", vyuzite misto: " + vyuziteMisto + " B " +
+                '}';
+    }
 
 
 }

@@ -12,6 +12,9 @@ public class Pamet {
         this.kapacitaPameti = kapacitaPameti;
     }
 
-
+    @Override
+    public String toString() {
+        return "Pamet: " + kapacitaPameti + " B ";
+    }
 
 }

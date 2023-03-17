@@ -23,6 +23,11 @@ public class Procesor {
         this.vyrobce = vyrobce;
     }
 
-
+    @Override
+    public String toString() {
+        return "Procesor {" +
+                " vyrobce: " + vyrobce +
+                ", rychlost: " + rychlost + " Hz " + '}';
+    }
 
 }

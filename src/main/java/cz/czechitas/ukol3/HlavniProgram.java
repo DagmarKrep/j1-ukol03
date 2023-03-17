@@ -28,32 +28,19 @@ public class HlavniProgram {
         mujProcesor.setVyrobce("Intel");
         mujProcesor.setRychlost(3_600_000_000L);
 
-        @Override
-        public String toString() {
-            return "Disk {" +
-                    " kapacita disku: " + kapacitaDisku + " B " +
-                    ", vyuzite misto: " + vyuziteMisto + " B " +
-                    '}';
-        }
+        System.out.println("Program spuštěn.");
 
-        @Override
-        public String toString() {
-            return "Pamet: " + kapacitaPameti + " B ";
-        }
-
-        @Override
-        public String toString() {
-            return "Procesor {" +
-                    " vyrobce: " + vyrobce +
-                    ", rychlost: " + rychlost + " Hz "
-                    '}';
-        }
+        System.out.println("Kapacita disku: " + mujDisk.getKapacitaDisku() + " B ");
+        System.out.println("Vyuzite misto na disku: " + mujDisk.getVyuziteMisto() + " B ");
+        System.out.println(mojePamet);
+        System.out.println("Vyrobce: " + mujProcesor.getVyrobce());
+        System.out.println("Rychlost: " + mujProcesor.getRychlost() + " Hz ");
 
 
         //TODO tady bude váš kód - vytvoření instance třídy Pocitac, zapnutí, vpynutí, výpis hodnot.
 
 
-        System.out.println("Program spuštěn.");
+
     }
 
 }
