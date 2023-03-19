@@ -7,21 +7,13 @@ public class Procesor {
     private long rychlost;
 
 
-    public long getRychlost() {
-        return rychlost;
-    }
+    public long getRychlost() {return rychlost;}
 
-    public void setRychlost(long rychlost) {
-        this.rychlost = rychlost;
-    }
+    public void setRychlost(long rychlost) {this.rychlost = rychlost;}
 
-    public String getVyrobce() {
-        return vyrobce;
-    }
+    public String getVyrobce() {return vyrobce;}
 
-    public void setVyrobce(String vyrobce) {
-        this.vyrobce = vyrobce;
-    }
+    public void setVyrobce(String vyrobce) {this.vyrobce = vyrobce;}
 
     @Override
     public String toString() {

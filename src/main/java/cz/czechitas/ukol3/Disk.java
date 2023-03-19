@@ -7,21 +7,13 @@ public class Disk {
 
 //    System.out.println("Kapacita disku je: " + kapacitaDisku)
 
-    public long getVyuziteMisto() {
-        return vyuziteMisto;
-    }
+    public long getVyuziteMisto() {return vyuziteMisto;}
 
-    public void setVyuziteMisto(long vyuziteMisto) {
-        this.vyuziteMisto = vyuziteMisto;
-    }
+    public void setVyuziteMisto(long vyuziteMisto) {this.vyuziteMisto = vyuziteMisto;}
 
-    public long getKapacitaDisku() {
-        return kapacitaDisku;
-    }
+    public long getKapacitaDisku() {return kapacitaDisku;}
 
-    public void setKapacitaDisku(long kapacitaDisku) {
-        this.kapacitaDisku = kapacitaDisku;
-    }
+    public void setKapacitaDisku(long kapacitaDisku) {this.kapacitaDisku = kapacitaDisku;}
 
     @Override
     public String toString() {

@@ -4,11 +4,11 @@ import cz.czechitas.ukol3.Disk;
 import cz.czechitas.ukol3.Pamet;
 import cz.czechitas.ukol3.Procesor;
 
+import java.util.Objects;
+
 public class Pocitac {
 
     private static boolean jeZapnuty;
-
-    private boolean jeVypnuty;
 
     private Procesor cpu;
 
@@ -60,36 +60,34 @@ public class Pocitac {
     }
 
     public void zapniSe() {
-        if (Procesor == null) {
-            System.err.println("Chybi procesor.");
-            return;
-        } else if (Pamet == null) {
-            System.err.println("Chybi pamet.");
-            return;
-        } else if (Disk == null) {
-            System.err.println("Chybi disk.");
-            return;
-        } else if (Pocitac.jeZapnuty) {
+        if (Pocitac.jeZapnuty) {
             System.err.println("Pocitac je zapnuty.");
-            return;
         } else {
-            setJeZapnuty();
+            setJeZapnuty(true);
             System.out.println("Pocitac je zapnuty.");
         }
-    }
 
-    public boolean isJeVypnuty () {
-        return this.jeVypnuty;
-    }
+//        Objects.requireNonNull(Procesor);
+//        Objects.requireNonNull(Pamet);
+//        Objects.requireNonNull(Disk);
 
-    public void setJeVypnuty ( boolean jeVypnuty) {
-        this.jeVypnuty = jeVypnuty;
+//        else if (Procesor == null) {
+//            System.err.println("Chybi procesor.");
+//            return;
+//        } else if (Pamet == null) {
+//            System.err.println("Chybi pamet.");
+//            return;
+//        } else if (Disk == null) {
+//            System.err.println("Chybi disk.");
+//            return;
+
     }
 
     public void vypniSe() {
-        if (Pocitac.jeZapnuty) {
+        if (!Pocitac.jeZapnuty) {
+            //-> do nothing
         } else {
-            setJeVypnuty();
+            setJeZapnuty(false);
             System.out.println("Pocitac je vypnuty.");
         }
     }

@@ -8,9 +8,7 @@ public class Pamet {
         return kapacitaPameti;
     }
 
-    public void setKapacitaPameti (long kapacitaPameti) {
-        this.kapacitaPameti = kapacitaPameti;
-    }
+    public void setKapacitaPameti (long kapacitaPameti) {this.kapacitaPameti = kapacitaPameti;}
 
     @Override
     public String toString() {
