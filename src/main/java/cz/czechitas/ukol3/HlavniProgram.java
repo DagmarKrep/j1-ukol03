@@ -46,9 +46,10 @@ public class HlavniProgram {
         System.out.println("Vyrobce: " + mujProcesor.getVyrobce());
         System.out.println("Rychlost: " + mujProcesor.getRychlost() + " Hz ");
 
-        mujPocitac.vypnise();
         mujPocitac.vypniSe();
         mujPocitac.vypniSe();
+        mujPocitac.vypniSe();
+
 
         //TODO tady bude váš kód - vytvoření instance třídy Pocitac, zapnutí, vpynutí, výpis hodnot.
 
