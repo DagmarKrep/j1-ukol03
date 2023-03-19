@@ -31,6 +31,7 @@ public class HlavniProgram {
         mujPocitac.setCpu(mujProcesor);
         mujPocitac.setRam(mojePamet);
         mujPocitac.setPevnyDisk(mujDisk);
+        mujPocitac.setVelikostSouboru(511_627_776L);
 
         System.out.println(mujPocitac.toString());
 
@@ -45,6 +46,11 @@ public class HlavniProgram {
         System.out.println(mojePamet);
         System.out.println("Vyrobce: " + mujProcesor.getVyrobce());
         System.out.println("Rychlost: " + mujProcesor.getRychlost() + " Hz ");
+
+        mujPocitac.vytvorSouborOVelikosti(mujPocitac.getVelikostSouboru());
+        System.out.println("Vyuzite misto na disku: " + mujDisk.getVyuziteMisto() + " B ");
+        mujPocitac.vymazSouborOVelikosti(mujPocitac.getVelikostSouboru());
+        System.out.println("Vyuzite misto na disku: " + mujDisk.getVyuziteMisto() + " B ");
 
         mujPocitac.vypniSe();
         mujPocitac.vypniSe();
