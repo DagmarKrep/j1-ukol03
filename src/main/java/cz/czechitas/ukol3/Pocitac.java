@@ -19,6 +19,7 @@ public class Pocitac {
     private long velikostSouboru;
 
 
+
     public Procesor getCpu() {
         return cpu;
     }
